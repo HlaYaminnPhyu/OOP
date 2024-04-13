@@ -6,7 +6,7 @@ class Db {
 	{
 		$host="localhost";
 		$username="hlayaminnphyu";
-		$password="hlayaminnphyu";
+		$password="asdffdsa";
 		$database="san_kyi_tar";
 		$this->conn=mysqli_connect($host,$username,$password,$database);
 		$this->tableName=$tableName;

@@ -15,9 +15,35 @@ require_once "./autoload.php";
 // $my->create(["name"=>"lu maw aung","money"=>"5000"]);
 
 
-$txt=new FileWriter("name.txt");
-$txt->write("a\n");
-$txt->write("b\n");
-$txt->write("c\n");
-$html=new FileWriter("home.html");
-$html->write("<h1>Min Ga Lar Par</h1>");
+// $txt=new FileWriter("name.txt");
+// $txt->write("a\n");
+// $txt->write("b\n");
+// $txt->write("c\n");
+// $html=new FileWriter("home.html");
+// $html->write("<h1>Min Ga Lar Par</h1>");
+
+// print_r(Three::$a);
+// print_r(Three::b());
+
+// print_r(Three::c());
+
+// $one=new One;
+// print_r($one->a()->b());
+
+// $users=new QueryBuilder("users");
+// print_r($users->sql());
+// print($users->where("age","=","23")->where("nation","=","my")->orderBy('age')->orderBy('name',"DESC")->sql());
+
+// $my=new QueryBuilder("my");
+// echo $my->where('id','=',31)->orWhere("id","=",33)->orWhere("id","=",'32')->sql();
+
+
+$me=new Person;
+$me->appearance="so beautiful";
+echo $me->appearance;
+// echo $me->dance();
+echo $me->talk();
+$me->skinColor="brown";
+echo $me->skinColor;
+$me->setFbPassword("mingalarpar");
+var_dump($me->getFbPassword());
